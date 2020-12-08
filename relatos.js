@@ -26,7 +26,7 @@ if (!cm) {
 function formComentario() {
   let texto = '';
   // Montar texto HTML dos relatos
-      for (i = 0; i < cm.data.lenght; i++) {
+      for (i = 0; i < cm.data.length; i++) {
         if(sessionStorage.getItem('id_Relato') == cm.data[i].idRelato){
         let coment = cm.data[i]; 
       texto += `

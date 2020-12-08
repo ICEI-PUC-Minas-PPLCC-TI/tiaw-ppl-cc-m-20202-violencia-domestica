@@ -30,7 +30,7 @@ if (!ra) {
 function formApoios(i) {
   let texto = '';
   // Montar texto HTML dos apoios
-  for (i = 0; i < ra.data.lenght; i++) {
+  for (i = 0; i < ra.data.length; i++) {
       let ap = ra.data[i]; 
       texto += `
       <div style="background-color: rgba(0, 0, 0, 0.329); padding: 20px; margin: 20px; color: white;">

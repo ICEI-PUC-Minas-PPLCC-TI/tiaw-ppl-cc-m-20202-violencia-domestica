@@ -54,7 +54,7 @@ function formRelatos() {
   
   let texto = '';
   // Montar texto HTML dos relatos
-      for (i = 0; i < db.data.lenght; i++) {
+      for (i = 0; i < db.data.length; i++) {
         let relatos = db.data[i]; 
         console.log(db.size);
       texto += `
