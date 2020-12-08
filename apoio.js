@@ -22,6 +22,7 @@ var ra_apoios_inicial = {
   ]
 }
 // Caso os dados já estejam no Local Storage, caso contrário, carrega os dados iniciais
+localStorage.setItem('ra_apoio', JSON.stringify(ra));
 var ra = JSON.parse(localStorage.getItem('ra_apoio'));
 if (!ra) {
     ra = ra_apoios_inicial
