@@ -26,6 +26,8 @@ var ra = JSON.parse(localStorage.getItem('ra_apoio'));
 if (!ra) {
     ra = ra_apoios_inicial
 };
+// Atualiza os dados no Local Storage
+localStorage.setItem('ra_apoio', JSON.stringify(ra));
 
 //funcao para exibir
 function formApoios(i) {

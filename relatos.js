@@ -22,6 +22,8 @@ var cm = JSON.parse(localStorage.getItem('cm_comentario'));
 if (!cm) {
     cm = cm_comentarios_inicial
 };
+// Atualiza os dados no Local Storage
+localStorage.setItem('cm_contato', JSON.stringify(cm));
 
 //funcao para exibir
 function formComentario() {

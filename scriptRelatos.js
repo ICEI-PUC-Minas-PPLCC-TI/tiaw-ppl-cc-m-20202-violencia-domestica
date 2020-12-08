@@ -29,6 +29,9 @@ var db = JSON.parse(localStorage.getItem('db_relato'));
 if (!db) {
     db = db_relatos_inicial
 };
+// Atualiza os dados no Local Storage
+localStorage.setItem('db_contato', JSON.stringify(db));
+
 //funcao opara inserir
 function insertRelato(relato) {
   // Calcula novo Id a partir do último código existente no array (PODE GERAR ERRO SE A BASE ESTIVER VAZIA)
