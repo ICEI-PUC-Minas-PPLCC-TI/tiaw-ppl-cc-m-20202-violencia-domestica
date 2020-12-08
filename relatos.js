@@ -45,7 +45,7 @@ function formComentario() {
 //funcao opara inserir
 function insertComentario(comentario) {
   // Calcula novo Id a partir do último código existente no array (PODE GERAR ERRO SE A BASE ESTIVER VAZIA)
-  let novoId = db.data[db.data.length - 1].id + 1;
+  let novoId = cm.data[cm.data.length - 1].id + 1;
   let novoComentario = {
       "idRelato": sessionStorage.getItem("relComent"),
       "id": novoId,
