@@ -6,7 +6,6 @@ if (sessionStorage.getItem('AceitarGatilho') === null) {
 //relatos funcoes e bancos de dados
 // declara um conjunto inicial de contatos
 var db_relatos_inicial = {
-  "size": 2,
   "data": [
       {
           "id": 1,
@@ -55,7 +54,7 @@ function formRelatos() {
   
   let texto = '';
   // Montar texto HTML dos relatos
-      for (i = 0; i < db.size; i++) {
+      for (i = 0; i < db.data.lenght; i++) {
         let relatos = db.data[i]; 
         console.log(db.size);
       texto += `
