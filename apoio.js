@@ -48,7 +48,7 @@ function formApoios(i) {
 function showApoios() {
   let texto = '';
   // Montar texto HTML dos apoios
-      for (i = 0; i < 4; i++) {
+      for (i = 0; i < 2; i++) {
         let ap = ra.data[i]; 
       texto += `
       <div  style="background-color: rgba(0, 0, 0, 0.329); padding: 10px; margin: 20px;">
