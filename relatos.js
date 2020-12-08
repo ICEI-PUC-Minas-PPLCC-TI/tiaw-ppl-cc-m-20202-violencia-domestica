@@ -1,6 +1,7 @@
 //comentarioss funcoes e bancos de dados
 // declara um conjunto inicial de contatos
 var cm_comentarios_inicial = {
+  "size": 2,
   "data": [
       {
           "idRelato" : "0",
@@ -26,8 +27,7 @@ if (!cm) {
 function formComentario() {
   let texto = '';
   // Montar texto HTML dos relatos
-  console.log(cm.data.length);
-      for (i = 0; i < cm.data.length; i++) {
+      for (i = 0; i < cm.size; i++) {
         if(sessionStorage.getItem('id_Relato') == cm.data[i].idRelato){
         let coment = cm.data[i]; 
       texto += `
