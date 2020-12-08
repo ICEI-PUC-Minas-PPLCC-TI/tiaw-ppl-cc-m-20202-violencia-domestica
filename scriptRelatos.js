@@ -55,9 +55,7 @@ function formRelatos() {
   
   let texto = '';
   // Montar texto HTML dos relatos
-  let size = JSON.parse(localStorage.getItem('db_contato')).size;
-  console.log(size);
-      for (i = 0; i < size; i++) {
+      for (i = 0; i < db.size; i++) {
         let relatos = db.data[i]; 
       texto += `
       <div class="container">
