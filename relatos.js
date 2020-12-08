@@ -3,13 +3,13 @@
 var cm_comentarios_inicial = {
   "data": [
       {
-          "idRelato" : 0,
+          "idRelato" : "0",
           "id": 1,
           "nome": "pessoa",
           "comentario": "tocante!"
       },
       {
-        "idRelato" : 1,
+        "idRelato" : "1",
         "id": 2,
         "nome": "nome",
         "comentario": "tocante!"
@@ -26,6 +26,7 @@ if (!cm) {
 function formComentario() {
   let texto = '';
   // Montar texto HTML dos relatos
+  console.log(cm.data.length);
       for (i = 0; i < cm.data.length; i++) {
         if(sessionStorage.getItem('id_Relato') == cm.data[i].idRelato){
         let coment = cm.data[i]; 
