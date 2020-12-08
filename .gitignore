@@ -1,0 +1,4 @@
+# IDEs
+*.swp
+*.swo
+"sendgrid.env" 

@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Fenixa</title>
+    <link rel="shortcut icon" href="./favicon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+  <body class="relatos_page">
+    <!--Menu-->
+            <header class="contanier-fluid">
+                <div class="container-fluid top">
+                    <div class="container">
+                        <a href="home.html" class="logo"></a>
+                        <input type="checkbox" id="checkboxMenu">
+                        <label for="checkboxMenu">
+                            <i class="fas fa-bars"></i>
+                            <i class="fas fa-times"></i>
+                        </label>
+                        <nav>
+                            <ul class="nav justify-content-end">
+                                <li class="nav-item">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Notícias
+                                      </a>
+                                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="female.html">Mulheres</a>
+                                        <a class="dropdown-item" href="male.html">Homens</a>
+                                        <a class="dropdown-item" href="lgbt.html">LGBT</a>
+                                        <a class="dropdown-item" href="child.html">Crianças</a>
+                                        <a class="dropdown-item" href="elder.html">Idosos</a>
+                                    </div>
+                                    </li>    
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="navRelatos" href="relatos.html">Relatos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="apoio.html">Apoio à Vítima</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="sobre.html">Sobre</a>
+                                </li>
+                                <form style="display: flex;">
+                                    <input class="form-control" type="text" placeholder="Pesquisar" aria-label="Pesquisar" id="txtPesquisa">
+                                    <button id="btn_sub" style="height: 30px; margin-top: 18px; border-radius: 5px;">IR</button></form>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+    </header>
+
+    <!--Conteudo Relatos-->
+    <main class="border R">
+        <section class="container-fluid Titulo_R">
+            <div class="container">
+                <div class="top">
+                    <h1>Relatos</h1>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid Relato">
+            <div class="container">
+                <div class="top">
+                    <h1>Formulário para Relatos</h1>
+                <h3> Gostaria de compartilhar sua história e inspirar/ajudar outras pessoas? Clique no botão abaixo para preencher 
+                    e enviar seu relato para o site.
+                </h3>
+                <button type="button" class="btn btn-outline-dark button_r" id="mandaRel">Clique aqui</button>
+                </div>
+            </div>
+                <div id="abrir_form" class="hide"> <div class="container">
+                    <div class="top " id="formRelato">
+                        <form id="formRel" method="" >                                                  
+                            <p> 
+                              <label for="name">Nome Fictício:</label>
+                              <input type="text" id="nome" name="nome" autocomplete="off"/>
+                            </p>
+                            <p> 
+                                <select class="categ_rel" id="categoria">
+                                    <option value="1">Categoria</option>
+                                    <option value="2">Mulher</option>
+                                    <option value="3">Homem</option>
+                                    <option value="4">LBGT</option>
+                                    <option value="5">Criança</option>
+                                    <option value="6">Idoso</option>
+                                </select>
+                            </p>
+                            <p id="conteudo">
+                                <textarea name="resumo" id="resumoR" placeholder="Resumo" required></textarea>
+                            </p>
+                            <p>
+                                <textarea name="relato" id="relatoR" placeholder="Relato" required></textarea>
+                            </p>
+                            <p><input type="button" id="btn_rel" value="clique aqui"></input></p>
+                        </form>
+                    </div>
+                </div></div>
+            
+        </section>
+
+        <section class="container-fluid Relato">
+            <div id="relatosjs">
+            <div class="container">
+                <div class="top">
+                    
+                    <h1>titulo</h1>
+                <h3> resumo
+                </h3>
+                <a href="relatosCompletos.html" id="butt_rel" ><button type="button" class="btn btn-outline-dark button_r">Saiba Mais</button></a>
+                </div>
+            </div></div>
+        </section>
+        
+    </main>
+
+    <footer class="container-fluid">
+        <div class="container py-3">
+            <div class="copy py-3">©Copyright 2020 Fenixa, Inc. All rights reserved. Privacy Policy | Terms of Use - Disciplina de Desenvolvimento de Interfaces Web - ICEI PUC Minas</div>
+        </div>
+    </footer>
+
+    <!--Janela Modal-->
+    <section id="modal" class="aviso">
+        <form id="gatilho">
+            <h2>AVISO DE GATILHO E CONTEÚDO EXPLÍCITO</h2>
+            <p>O conteúdo a seguir pode</br> causar <strong>gatilho</strong> e ser impróprio </br>para menores de <strong>18 anos</strong>.</p>
+            <button id="btn_back"><a href="home.html">Voltar</a></button>
+            <input type="button" id="btn_submit" value="Continuar"></input>
+        </form>
+    </section>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="scriptRelatos.js"></script>
+</body>
+</html>

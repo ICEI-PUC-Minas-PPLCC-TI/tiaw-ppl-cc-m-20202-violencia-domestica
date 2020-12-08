@@ -1,0 +1,517 @@
+@font-face {
+    src: url(fonts/fontawesome-webfont.woff2);
+    font-family: blackpink;
+}
+
+@font-face {
+    src: url(fonts/SecularOne-Regular.ttf);
+    font-family: kuro;
+}
+
+body {
+    background-color: pink;
+}
+
+a {
+    text-decoration: none !important;
+    color: inherit;
+    transition: opacity .2s; 
+}
+
+a:hover {
+    color: inherit;
+    opacity: .9;
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+}
+
+header .top {
+    height: 70px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 2px 0 rgba(0,0,0,.1), inset 0 -2px 0 rgba(255,255,255,0.05);
+    z-index: 999;
+}
+
+header .top input[type="checkbox"] { display: none; }
+
+header .top label[for="checkboxMenu"] {
+    position: relative;
+    margin: 10px 0 0 auto;
+    font-size: 30px;
+    color: #FFF;
+    display: none;
+    cursor: pointer;
+    z-index: 999;
+}
+
+header .top label[for="checkboxMenu"] i:last-of-type {
+    margin-top: 7px;
+    color: rgba(255,255,255,0.5);
+    display: none;
+}
+
+header .top input[type="checkbox"]:checked ~  label[for="checkboxMenu"] i:last-of-type { display: block; }
+
+header .top input[type="checkbox"]:checked ~  label[for="checkboxMenu"] i:first-of-type { display: none; } 
+
+header .top > .container {
+    display: flex;
+}
+
+header .top .logo {
+    width: 135px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 70px;
+    background-image: url(logos/elderlogo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+header .top .usu {
+    width: 50px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 30px;
+    background-image: url(imgs/usu.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+header .top .dropdown-menu {
+    background-color: black;
+}
+
+header .top nav {
+    margin-left: 10px;
+    margin-top: 5px;
+    display: inline-block;
+    font-family: blackpink;
+}
+
+header .top nav ul {
+    height: 100%;
+}
+
+header .top nav ul li {
+    padding: 14px 0;
+}
+
+header .top nav ul li a {
+    font-weight: 500;
+    font-size: 13px;
+    color: white;
+    transition: color .2s;
+}
+
+header .top nav ul li a:hover {
+    color: orange;
+}
+
+header .top nav input {
+    width: 170px;
+    padding: 0 5px;
+    margin: 12px 0 0 20px;
+    background-color: transparent;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.9) !important;
+    border-radius: 0;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    opacity: 0.5;
+    transition: opacity .2s;
+}
+
+header .top nav input:focus {
+    color: #FFF;
+    opacity: 1;
+    background-color: transparent;
+}
+
+
+
+
+
+
+
+
+header .slide .carousel-inner {
+    height: 100%;
+}
+
+
+header .slide .carousel-inner .carousel-item {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 700px 0 rgba(0,0,0,.7);
+}
+
+main .slide .carousel-inner .carousel-item .data iframe {
+    width: 100%;
+    margin-top: 10px;
+}
+
+main .slide .carousel-inner .carousel-item .data {
+    font-size: 12px;
+    color:none;
+}
+
+
+
+main img {
+    margin-left: 110px;
+}
+
+
+
+
+
+main section .top {
+    margin-top: 20px;
+    display: flex;
+}
+
+main section .top h2 {
+    text-align: center;
+    line-height: 40px;
+}
+
+
+
+
+.mainback {
+    background-image: url(imgs/elderback.jpg);
+    background-attachment: fixed;
+    background-size: contain;
+}
+
+main {
+    background-image: url(imgs/back.jpg);
+    background-size: 2100px;
+    background-repeat: no-repeat;
+}
+
+.border {
+    border-width:10px !important;
+    border-color: orangered !important;
+}
+main section.Propósito .top {
+    background-color:  rgba(0, 0, 0, 0.733);
+    display: block;
+    padding: 20px;
+    border: rgb(0, 0, 0);
+    border-style: solid;
+    border-width: 10px;
+}
+
+
+main section.Propósito .top h2 {
+    color: rgb(255, 255, 255);
+    font-family: blackpink;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+main section.Propósito .top h6 {
+    color: rgb(255, 255, 255);
+    font-family: kuro;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+main section.Propósito p {
+    color: rgb(223, 213, 213);
+    font-family: kuro;
+}
+
+
+
+
+
+
+
+
+
+
+main section.contatos .top {
+    display: block;
+}
+
+main section.contatos .top h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: blackpink;
+}
+
+
+
+
+
+*{
+    list-style: none;
+  }
+  
+  main ul{
+    text-align: center;
+    align-items: center;
+    margin-left: 250px;
+    margin-top: 30px;
+    display: flex;
+  }
+  main ul li{
+    position: relative;
+    display: block;
+    color: #666;
+    font-size: 30px;
+    height: 60px;
+    width: 60px;
+    background: #171515;
+    line-height: 60px;
+    border-radius: 50%;
+    margin: 0 15px;
+    cursor: pointer;
+    transition: .5s;
+  }
+  main ul li:before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: inherit;
+    width: inherit;
+    /* background: #d35400; */
+    border-radius: 50%;
+    transform: scale(.9);
+    z-index: -1;
+    transition: .5s;
+  }
+  main ul li:nth-child(1):before{
+    background: #4267B2;
+  }
+  main ul li:nth-child(2):before{
+    background: #1DA1F2;
+  }
+  main ul li:nth-child(3):before{
+    background: #E1306C;
+  }
+  main ul li:nth-child(4):before{
+    background: #2867B2;
+  }
+  main ul li:nth-child(5):before{
+    background: #ff0000;
+  }
+  main ul li:hover:before{
+    filter: blur(3px);
+    transform: scale(1.2);
+    /* box-shadow: 0 0 15px #d35400; */
+  }
+  main ul li:nth-child(1):hover:before{
+    box-shadow: 0 0 15px #4267B2;
+  }
+  main ul li:nth-child(2):hover:before{
+    box-shadow: 0 0 15px #1DA1F2;
+  }
+  main ul li:nth-child(3):hover:before{
+    box-shadow: 0 0 15px #E1306C;
+  }
+  main ul li:nth-child(4):hover:before{
+    box-shadow: 0 0 15px #2867B2;
+  }
+  main ul li:nth-child(5):hover:before{
+    box-shadow: 0 0 15px #ff0000;
+  }
+  main ul li:nth-child(1):hover{
+    color: #456cba;
+    box-shadow: 0 0 15px #4267B2;
+    text-shadow: 0 0 15px #4267B2;
+  }
+  main ul li:nth-child(2):hover{
+    color: #26a4f2;
+    box-shadow: 0 0 15px #1DA1F2;
+    text-shadow: 0 0 15px #1DA1F2;
+  }
+  main ul li:nth-child(3):hover{
+    color: #e23670;
+    box-shadow: 0 0 15px #E1306C;
+    text-shadow: 0 0 15px #E1306C;
+  }
+  main ul li:nth-child(4):hover{
+    color: #2a6cbb;
+    box-shadow: 0 0 15px #2867B2;
+    text-shadow: 0 0 15px #2867B2;
+  }
+  main ul li:nth-child(5):hover{
+    color: #ff1a1a;
+    box-shadow: 0 0 15px #ff0000;
+    text-shadow: 0 0 15px #ff0000;
+  }
+  /* ul li:hover{
+    color: #ffa502;
+    box-shadow: 0 0 15px #d35400;
+    text-shadow: 0 0 15px #d35400;
+  } */
+  
+  
+
+
+
+
+
+
+footer {
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+footer .container {
+    display: flex;
+}
+
+footer .copy {
+    color: rgba(255,255,255,0.4);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 995px) {
+    
+    header .top label[for="checkboxMenu"] { display: block; }
+
+    header .top input[type="checkbox"]:checked ~  nav { right: 0; }
+
+    header .top nav {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        padding: 15px 0;
+        background-color: rgba(0,0,0,.95);
+        align-content: center;
+        transition: right .15s;
+    }
+
+    header .top nav ul { height: auto; }
+
+    header .top nav ul li {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    header .top nav ul li a {
+        font-size: 20px;
+    }
+
+    header .top nav input {
+        width: 200px;
+        margin: 30px auto;
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    header .slide{ 
+        height: 330px;
+    }
+
+    header .slide .slideTitle {
+        top: 95px;
+        font-size: 18px;
+    }
+
+    header .slide .carousel-inner .carousel-item {
+        padding-top: 135px;
+    }
+
+    header .slide .carousel-inner .carousel-item .data h1 {
+        text-align: center;
+    }
+
+    main section.novidades-infos .card {
+        flex-direction: column;
+    }
+    
+    main section.novidades-infos .card .card-image {
+        width: 100%;
+    }
+    
+    main section.novidades-infos .card .card-body {
+        width: 100%;
+    }
+
+    footer .container {
+        display: block;
+    }
+
+    footer .copy {
+        width: 100%;
+    }
+    
+    footer .logo {
+        width: 135px;
+        margin: 0 auto;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+
+    header .slide .carousel-inner .carousel-item .data h1 {
+        font-size: 23px;
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+
+    header .slide{ 
+        height: 230px;
+    }
+
+    header .slide .slideTitle {
+        font-size: 14px;
+    }
+
+    header .slide .carousel-inner .carousel-item .data .sinopse {
+        display: none;
+    }
+
+}

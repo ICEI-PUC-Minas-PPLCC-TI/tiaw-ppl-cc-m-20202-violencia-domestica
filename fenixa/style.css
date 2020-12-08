@@ -1,0 +1,781 @@
+@font-face {
+  src: url(fonts/fontawesome-webfont.woff2);
+  font-family: blackpink;
+}
+
+@font-face {
+  src: url(fonts/SecularOne-Regular.ttf);
+  font-family: kuro;
+}
+
+body {
+  background-color: pink;
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit;
+  transition: opacity 0.2s;
+}
+
+a:hover {
+  color: inherit;
+  opacity: 0.9;
+}
+
+header {
+  background-color: rgb(0, 0, 0);
+}
+
+header .top {
+  height: 70px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: rgb(0, 0, 0, 0.9);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1),
+    inset 0 -2px 0 rgba(255, 255, 255, 0.05);
+  z-index: 999;
+}
+
+header .top input[type="checkbox"] {
+  display: none;
+}
+
+header .top label[for="checkboxMenu"] {
+  position: relative;
+  margin: 10px 0 0 auto;
+  font-size: 30px;
+  color: #fff;
+  display: none;
+  cursor: pointer;
+  z-index: 999;
+}
+
+header .top label[for="checkboxMenu"] i:last-of-type {
+  margin-top: 7px;
+  color: rgba(255, 255, 255, 0.5);
+  display: none;
+}
+
+header
+  .top
+  input[type="checkbox"]:checked
+  ~ label[for="checkboxMenu"]
+  i:last-of-type {
+  display: block;
+}
+
+header
+  .top
+  input[type="checkbox"]:checked
+  ~ label[for="checkboxMenu"]
+  i:first-of-type {
+  display: none;
+}
+
+header .top > .container {
+  display: flex;
+}
+
+header .top .logo {
+  width: 135px;
+  height: 50px;
+  margin-top: 10px;
+  margin-left: 70px;
+  background-image: url(imgs/20201005_134056.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+header .top .usu {
+  width: 50px;
+  height: 40px;
+  margin-top: 10px;
+  margin-left: 30px;
+  background-image: url(imgs/usu.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+header .top .dropdown-menu {
+  background-color: black;
+}
+
+header .top nav {
+  margin-left: 10px;
+  margin-top: 5px;
+  display: inline-block;
+  font-family: blackpink;
+}
+
+header .top nav ul {
+  height: 100%;
+}
+
+header .top nav ul li {
+  padding: 12px 0;
+}
+
+header .top nav ul li a {
+  font-weight: 500;
+  font-size: 15px;
+  color: white;
+  transition: color 0.2s;
+}
+
+header .top nav ul li a:hover {
+  color: pink;
+}
+
+header .top nav input {
+  width: 170px;
+  padding: 0 5px;
+  margin: 12px 0 0 20px;
+  background-color: transparent;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.9) !important;
+  border-radius: 0;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+
+header .top nav input:focus {
+  color: #fff;
+  opacity: 1;
+  background-color: transparent;
+}
+
+header .slide .carousel-inner {
+  height: 100%;
+}
+
+header .slide .carousel-inner .carousel-item {
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0 700px 0 rgba(0, 0, 0, 0.7);
+}
+
+main .slide .carousel-inner .carousel-item .data iframe {
+  width: 100%;
+  margin-top: 10px;
+}
+
+main .slide .carousel-inner .carousel-item .data {
+  font-size: 12px;
+  color: none;
+}
+
+main section .top {
+  margin: 40px;
+  display: flex;
+}
+
+main section .top h1 {
+  text-align: center;
+  line-height: 30px;
+}
+
+main section ul {
+  padding: 0;
+}
+
+main section ul li {
+  list-style: none;
+}
+
+main {
+  background-image: url(imgs/back.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.border {
+  border-width: 10px !important;
+  border-color: pink !important;
+}
+main section.Propósito .top {
+  background-color: rgb(255, 192, 203, 0.9);
+  display: block;
+  padding: 20px;
+  border: rgb(0, 0, 0);
+  border-style: solid;
+  border-width: 10px;
+}
+
+main section.Propósito .top h1 {
+  color: rgb(0, 0, 0);
+  font-family: blackpink;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+main section.Propósito h3 {
+  color: rgb(26, 24, 24);
+  font-family: kuro;
+  text-align: center;
+}
+
+main section.contatos .top {
+  display: block;
+}
+
+main section.contatos .top h1 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: blackpink;
+}
+
+* {
+  list-style: none;
+}
+body {
+  height: 100vh;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background: #262626;
+}
+main ul {
+  margin-left: 280px;
+  margin-top: 30px;
+  display: flex;
+}
+main ul li {
+  position: relative;
+  display: block;
+  color: #666;
+  font-size: 30px;
+  height: 60px;
+  width: 60px;
+  background: #171515;
+  line-height: 60px;
+  border-radius: 50%;
+  margin: 0 15px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+main ul li:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: inherit;
+  width: inherit;
+  /* background: #d35400; */
+  border-radius: 50%;
+  transform: scale(0.9);
+  z-index: -1;
+  transition: 0.5s;
+}
+main ul li:nth-child(1):before {
+  background: #4267b2;
+}
+main ul li:nth-child(2):before {
+  background: #1da1f2;
+}
+main ul li:nth-child(3):before {
+  background: #e1306c;
+}
+main ul li:nth-child(4):before {
+  background: #2867b2;
+}
+main ul li:nth-child(5):before {
+  background: #ff0000;
+}
+main ul li:hover:before {
+  filter: blur(3px);
+  transform: scale(1.2);
+  /* box-shadow: 0 0 15px #d35400; */
+}
+main ul li:nth-child(1):hover:before {
+  box-shadow: 0 0 15px #4267b2;
+}
+main ul li:nth-child(2):hover:before {
+  box-shadow: 0 0 15px #1da1f2;
+}
+main ul li:nth-child(3):hover:before {
+  box-shadow: 0 0 15px #e1306c;
+}
+main ul li:nth-child(4):hover:before {
+  box-shadow: 0 0 15px #2867b2;
+}
+main ul li:nth-child(5):hover:before {
+  box-shadow: 0 0 15px #ff0000;
+}
+main ul li:nth-child(1):hover {
+  color: #456cba;
+  box-shadow: 0 0 15px #4267b2;
+  text-shadow: 0 0 15px #4267b2;
+}
+main ul li:nth-child(2):hover {
+  color: #26a4f2;
+  box-shadow: 0 0 15px #1da1f2;
+  text-shadow: 0 0 15px #1da1f2;
+}
+main ul li:nth-child(3):hover {
+  color: #e23670;
+  box-shadow: 0 0 15px #e1306c;
+  text-shadow: 0 0 15px #e1306c;
+}
+main ul li:nth-child(4):hover {
+  color: #2a6cbb;
+  box-shadow: 0 0 15px #2867b2;
+  text-shadow: 0 0 15px #2867b2;
+}
+main ul li:nth-child(5):hover {
+  color: #ff1a1a;
+  box-shadow: 0 0 15px #ff0000;
+  text-shadow: 0 0 15px #ff0000;
+}
+/* ul li:hover{
+    color: #ffa502;
+    box-shadow: 0 0 15px #d35400;
+    text-shadow: 0 0 15px #d35400;
+  } */
+
+footer {
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+footer .container {
+  display: flex;
+}
+
+footer .copy {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+@media screen and (max-width: 995px) {
+  header .top label[for="checkboxMenu"] {
+    display: block;
+  }
+
+  header .top input[type="checkbox"]:checked ~ nav {
+    right: 0;
+  }
+
+  header .top nav {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    padding: 15px 0;
+    background-color: rgba(0, 0, 0, 0.95);
+    align-content: center;
+    transition: right 0.15s;
+  }
+
+  header .top nav ul {
+    height: auto;
+  }
+
+  header .top nav ul li {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+
+  header .top nav ul li a {
+    font-size: 20px;
+  }
+
+  header .top nav input {
+    width: 200px;
+    margin: 30px auto;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header .slide {
+    height: 330px;
+  }
+
+  header .slide .slideTitle {
+    top: 95px;
+    font-size: 18px;
+  }
+
+  header .slide .carousel-inner .carousel-item {
+    padding-top: 135px;
+  }
+
+  header .slide .carousel-inner .carousel-item .data h1 {
+    text-align: center;
+  }
+
+  main section.novidades-infos .card {
+    flex-direction: column;
+  }
+
+  main section.novidades-infos .card .card-image {
+    width: 100%;
+  }
+
+  main section.novidades-infos .card .card-body {
+    width: 100%;
+  }
+
+  footer .container {
+    display: block;
+  }
+
+  footer .copy {
+    width: 100%;
+  }
+
+  footer .logo {
+    width: 135px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header .slide .carousel-inner .carousel-item .data h1 {
+    font-size: 23px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  header .slide {
+    height: 230px;
+  }
+
+  header .slide .slideTitle {
+    font-size: 14px;
+  }
+
+  header .slide .carousel-inner .carousel-item .data .sinopse {
+    display: none;
+  }
+}
+
+
+
+/*--------------------RELATOS--------------------*/
+.Titulo_R h1 {
+  font-family: blackpink;
+  color: rgb(231, 231, 231);
+  font-size: 50px;
+  padding-left: 50px;
+  padding-top: 20px;
+}
+main.border {
+  margin-top: 70px;
+}
+main section.Relato .top {
+  background-color: rgb(255, 192, 203, 0.9);
+  display: block;
+  padding: 20px;
+  border: rgb(0, 0, 0);
+  border-style: solid;
+  border-width: 10px;
+}
+.top img {
+  float: left;
+  width: 230px;
+  margin-right: 40px;
+}
+main section.Relato .top h1 {
+  color: rgb(0, 0, 0);
+  font-family: blackpink;
+  padding-bottom: 10px;
+  padding-top: 0px;
+  text-align: left;
+  font-size: 35px;
+}
+main section.Relato h3 {
+  color: rgb(26, 24, 24);
+  font-family: kuro;
+  text-align: justify;
+  text-justify: distribute-all-lines;
+  font-size: 20px;
+}
+.button_r {
+  float: right;
+  margin-bottom: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+main section.Relato .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+/*Janela modal AVISO*/
+.aviso h2 {
+  font-weight: bold;
+}
+.aviso strong {
+  color: red;
+  font-size: 27px;
+}
+.aviso p {
+  font-size: 25px;
+}
+.aviso button,
+input {
+  font-size: 25px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.aviso #btn_submit {
+  background-color: rgb(180, 0, 0);
+  color: white;
+  margin-left: 10px;
+}
+.aviso #btn_back {
+  background-color: rgb(1, 105, 48);
+  color: white;
+  margin-right: 10px;
+}
+.aviso {
+  background-color: rgba(0, 0, 0, 0.87);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  display: flex;
+  top: 0;
+  z-index: 999;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.aviso form {
+  background-color: rgb(255, 192, 203, 0.9);
+  width: 500px;
+  height: 340px;
+  padding-top: 30px;
+  z-index: 999;
+  font-family: blackpink;
+  position: absolute;
+  border: 15px solid rgb(0, 0, 0);
+  box-shadow: 0 0 0 6px rgba(255, 192, 203, 0.479);
+}
+.mostrar {
+  display: flex;
+}
+
+/*--------------------SOBRE--------------------*/
+main section.Sobre .top {
+  background-color: rgb(255, 192, 203, 0.9);
+  display: block;
+  padding: 20px;
+  border: rgb(0, 0, 0);
+  border-style: solid;
+  border-width: 10px;
+}
+main section.Sobre .top h1 {
+  color: rgb(0, 0, 0);
+  font-family: blackpink;
+  padding-bottom: 10px;
+  padding-top: 0px;
+  text-align: center;
+  font-size: 35px;
+}
+main section.Sobre h3 {
+  color: rgb(26, 24, 24);
+  font-family: kuro;
+  text-align: justify;
+  text-justify: distribute-all-lines;
+  font-size: 20px;
+  padding: 30px;
+}
+main section.Sobre .container {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+.somos {
+  border-radius: 150px;
+  padding: 40px;
+}
+img#nos:hover{ transform: scale(1.05); }
+img#nos { margin-left: 55px;}
+/*icones*/
+main ul #sobre{
+    display: flex;
+    margin-left:-260px;
+    margin-top: -10px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+main ul #sobre i{ color: rgba(255, 255, 255, 0.877);}
+/*contato*/
+div #formulario{ 
+    background-color: rgba(0, 0, 0, 0.575); 
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    font-family: blackpink;
+    display: flex;
+    margin: 0 auto;
+    width: 500px;
+    height: 60px;
+}
+div #formulario.mostrar { height: auto;}
+p #formulario{ 
+    color: rgb(255, 254, 254);
+    background-color:  rgba(0, 0, 0, 0.219)!important;
+    font-size: 15px;
+    padding: 10px;
+    width: 85px;
+    float: right;
+}
+.convite{ justify-content: center;}
+button.bc, button.be{ 
+  margin: 0px 10px!important; 
+  font-weight: bold; 
+  text-align: center; 
+  justify-content: center; 
+  height: 45px!important;
+}
+#formulario label{ font-size: 20px; padding-right: 10px;}
+#formulario input{ font-size: 15px; text-align: center; width: 350px; height: 40px; margin: 10px;}
+#formulario textarea{ 
+  width: 450px!important; 
+  margin-top: 15px; 
+  text-align: center;
+  padding: 20px; 
+  border-radius: 10px;
+}
+#formulario div.form.hidden{ visibility: hidden;}
+.convite{ display: block;}
+.convite.mostrar h5:nth-child(2) { visibility: hidden;}
+.convite.remover h5:nth-child(2) { margin-top: -30px; }
+.convite.remover h5:first-child { visibility: hidden;}
+/*-------janela modal resultado do formulario----------*/
+#modal, #modal1{
+  background-color: rgba(0, 0, 0, 0.377);
+  display: flex;
+  z-index: 999;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+#modal.mostrar, #modal1.mostrar{ visibility: visible; }
+.s, .e{ 
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+  background-color: rgb(255, 192, 203, 0.9);  
+=======
+  background-color: rgb(255, 192, 203, 0.9);
+>>>>>>> parent of 338cfff... sprint3 pronta
+=======
+  background-color: rgb(255, 192, 203, 0.9); 
+>>>>>>> parent of 068cabe... Update style.css
+=======
+  background-color: rgb(255, 192, 203, 0.9); 
+>>>>>>> parent of 068cabe... Update style.css
+=======
+  background-color: rgb(255, 192, 203, 0.9); 
+>>>>>>> parent of 068cabe... Update style.css
+  height: 120px;
+  width: 350px;
+  font-family: blackpink;
+  border:8px solid rgb(0, 0, 0);
+  box-shadow: 0 0 0 6px rgba(255, 192, 203, 0.479);
+  padding: 20px;
+  display: block;
+}
+.s button, .e button{
+  background-color: #171515;
+  color: white;
+  border-radius: 4px;
+  border:2px solid rgb(0, 0, 0);
+}
+.s.mostrar{ z-index: 1000; position: relative; top: -230px; visibility: visible;}
+.e.mostrar{top: -230px; position: relative; visibility: visible;}
+#modal, #modal1{ background-color: #050505a4;}
+/*-------janela modal sobre----------*/
+div .bg.mostrar{
+    background-color: rgba(0, 0, 0, 0.164);
+    z-index: 999;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+#sobrePessoa {
+    background-color: rgb(255, 192, 203, 0.9);
+    font-family: blackpink;
+    border:8px solid rgb(0, 0, 0);
+    box-shadow: 0 0 0 6px rgba(255, 192, 203, 0.479);
+}
+#sobrePessoa img{ margin: 0 auto;}
+div .bg{
+    display: none;
+}
+
+/*---------------relatos completos--------------*/
+.tituloRelato h1 {
+  font-family: blackpink;
+  color: rgb(231, 231, 231);
+  font-size: 50px;
+  padding-top: 20px;
+  margin: 0 auto;
+}
+main.border {
+  margin-top: 70px;
+}
+main section.Relato .top {
+  background-color: rgb(255, 192, 203, 0.9);
+  display: block;
+  padding: 20px;
+  border: rgb(0, 0, 0);
+  border-style: solid;
+  border-width: 10px;
+}
+.imagemRelato img{
+  width: 350px;
+  margin: 0 auto;
+}
+.iconshare{ font-size: 3em; float: right; margin: 40px;}
+.iconshare:hover{ scale: 1.1; }
+
+/*---------------relatos formulario + modal--------------*/
+.categ_rel{ float: left;}
+div #formRelato{
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  font-family: blackpink;
+  height: 450px;
+  margin: 0 auto 70px  auto;
+}
+#resumoR{ height: 50px; }
+#relatoR{ height: 200px; width: 550px;}
+#formRelato #btn_rel{ float: right; margin-right: 80px;}
+select { margin-left: 60px;}
+#abrir_form.hide{ display: none; }
+/*---------------redes de apoio--------------*/
+
+main section.Apoio .top {
+  background-color: rgb(255, 192, 203, 0.9);
+  display: block;
+  padding: 20px;
+  border: rgb(0, 0, 0);
+  border-style: solid;
+  border-width: 10px;
+}

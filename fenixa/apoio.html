@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Fenixa</title>
+    <link rel="shortcut icon" href="./favicon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+            <header class="contanier-fluid">
+                <div class="container-fluid top">
+                    <div class="container">
+                        <a href="home.html" class="logo"></a>
+                        <input type="checkbox" id="checkboxMenu">
+                        <label for="checkboxMenu">
+                            <i class="fas fa-bars"></i>
+                            <i class="fas fa-times"></i>
+                        </label>
+                        <nav>
+                            <ul class="nav justify-content-end">
+                                <li class="nav-item">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Notícias
+                                      </a>
+                                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="female.html">Mulheres</a>
+                                        <a class="dropdown-item" href="male.html">Homens</a>
+                                        <a class="dropdown-item" href="lgbt.html">LGBT</a>
+                                        <a class="dropdown-item" href="child.html">Crianças</a>
+                                        <a class="dropdown-item" href="elder.html">Idosos</a>
+                                    </div>
+                                    </li>    
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="navRelatos" href="relatos.html">Relatos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="apoio.html">Apoio à Vítima</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="sobre.html">Sobre</a>
+                                </li>
+                                <form style="display: flex;">
+                                    <input class="form-control" type="text" placeholder="Pesquisar" aria-label="Pesquisar" id="txtPesquisa">
+                                    <button id="btn_sub" style="height: 30px; margin-top: 18px; border-radius: 5px;">IR</button></form>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+  
+    </header>
+
+    <main class="border">
+        
+        <section class="container-fluid Apoio">
+            <div class="container">
+                <div class="top" style="padding-bottom:40px;">
+                    <h1>Redes de Apoio</h1>
+                <div id="redes">
+                    <div style="background-color: rgba(0, 0, 0, 0.329); padding: 10px; margin: 20px;"><h3 style="color: white; margin-top: 10px;">
+                    METE A COLHER
+                </h3></div>
+                </div>
+                <a href="redes.html"><button id="btn_redes" style="font-size: 17px; float: right; margin-bottom: 10px;">Saiba Mais</button></a> 
+            </div></div>
+            
+        </section>
+
+        <section class="container-fluid Apoio">
+            <div class="container" >
+                <div class="top">
+                    <h1>Como Ajudar as Vítimas</h1>
+                    <div id="redes">
+                        <button id="btn_redes" style="font-size: 25px; margin:18px;">Mulheres</button>
+                        <button id="btn_redes" style="font-size: 25px; margin:18px;">Homens</button>
+                        <button id="btn_redes" style="font-size: 25px; margin:18px;">LGBT</button>
+                        <button id="btn_redes" style="font-size: 25px; margin:18px;">Crianças</button>
+                        <button id="btn_redes" style="font-size: 25px; margin:18px;">Idosos</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid Apoio">
+        <div class="container" >
+        <div class="top "style="font-size: 20px;">
+            <form id="formApoio" method="" >  
+                <h1 style="margin:20px; margin-bottom: 40px;">Cadastro de Redes de Apoio</h1>                                                
+                <p> 
+                  <label for="name">Nome da Rede de Apoio</label>
+                  <input type="text" id="nomeApoio" name="nome" autocomplete="off"required/>
+                </p>
+                <p id="conteudo">
+                    <textarea name="resumo" id="sobreApoio" placeholder="Conte-nos um pouco sobre a Rede de Apoio" required
+                    style="width: 600px; height: 100px;"></textarea>
+                </p>
+                <p>
+                    <label for="site" required>Site da Rede de Apoio</label>
+                    <input type="text" id="site" autocomplete="off" required/>
+                </p>
+                <p >
+                    <label for="site" required>CPF/CNPJ</label>
+                    <input type="text" id="cpf" autocomplete="off" required style="width: 200px;"/>
+                    <label for="site" required >Email</label>
+                    <input type="text" id="email" autocomplete="off" required style="width: 200px;"/>
+                </p>
+                <p><input type="button" id="btn_apoio" value="adicionar" ></input></p>
+            </form>
+        </div></div>
+    </section>
+    </main>
+
+    <footer class="container-fluid">
+        <div class="container py-3">
+            <div class="copy py-3">©Copyright 2020 Fenixa, Inc. All rights reserved. Privacy Policy | Terms of Use - Disciplina de Desenvolvimento de Interfaces Web - ICEI PUC Minas</div>
+        </div>
+    </footer>
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="apoio.js"></script>
+  </body>
+</html>
