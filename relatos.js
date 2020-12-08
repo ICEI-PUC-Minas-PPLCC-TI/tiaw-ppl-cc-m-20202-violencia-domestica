@@ -18,7 +18,6 @@ var cm_comentarios_inicial = {
   ]
 }
 // Caso os dados já estejam no Local Storage, caso contrário, carrega os dados iniciais
-localStorage.setItem('cm_contato', JSON.stringify(cm));
 var cm = JSON.parse(localStorage.getItem('cm_comentario'));
 if (!cm) {
     cm = cm_comentarios_inicial

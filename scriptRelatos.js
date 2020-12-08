@@ -25,7 +25,6 @@ var db_relatos_inicial = {
   ]
 }
 // Caso os dados já estejam no Local Storage, caso contrário, carrega os dados iniciais
-localStorage.setItem('db_contato', JSON.stringify(db));
 var db = JSON.parse(localStorage.getItem('db_relato'));
 if (!db) {
     db = db_relatos_inicial
