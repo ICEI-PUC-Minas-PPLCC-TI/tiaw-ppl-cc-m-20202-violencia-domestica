@@ -52,7 +52,7 @@ function formApoios(i) {
       <div style="background-color: rgba(0, 0, 0, 0.329); padding: 20px; margin: 20px; color: white;">
                     <h1>${ap.nome}</h1>
                     <h3>${ap.sobre}</h3>
-                <a href="${ap.site}"><button id="btn_redes" style="font-size: 17px; float: right; margin-top: -30px;">CONTATO</button></a></div>`;}
+                <a href="${ap.site}" target="_blank"><button id="btn_redes" style="font-size: 17px; float: right; margin-top: -30px;">CONTATO</button></a></div>`;}
   // Preencher a DIV com o texto HTML
   $('#apoios').html(texto);
 }
