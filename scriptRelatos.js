@@ -13,7 +13,7 @@ var db_relatos_inicial = {
           "nome": "Jovem de 21 anos de Içara teve 40% do corpo queimado pelo ex-companheiro.",
           "categoria": "mulher",
           "resumo": "O homem, que era atencioso e carinhoso no começo foi gradualmente tomando controle da vida da jovem, até que o controle virou violência.",
-          "relato": "No começo, o homem era extremamente romântico e cuidadoso. Ao passar do tempo, começou a dar presentes em troca de pequenas concessões:“essa saia é muito curta”, “o decote está demais”. Após um certo tempo, pediu a senha das redes sociais, chegou a um ponto que a roupa que eu ia colocar tinha que pedir para ele. Após questionar o namorado por uma mensagem recebida por ele, Vanessa foi seriamente agredida por seu ex-namorado. Fonte:https://www.nsctotal.com.br/noticias/violencia-domestica-conheca-historias-de-mulheres-que-lutaram-contra-a-morte"
+          "relato": "No começo, o homem era extremamente romântico e cuidadoso. Ao passar do tempo, começou a dar presentes em troca de pequenas concessões:“essa saia é muito curta”, “o decote está demais”. Após um certo tempo, pediu a senha das redes sociais, chegou a um ponto que a roupa que eu ia colocar tinha que pedir para ele. Após questionar o namorado por uma mensagem recebida por ele, Vanessa foi seriamente agredida por seu ex-namorado. </br> Fonte:https://www.nsctotal.com.br/noticias/violencia-domestica-conheca-historias-de-mulheres-que-lutaram-contra-a-morte"
       },
       {
         "id": 2,
