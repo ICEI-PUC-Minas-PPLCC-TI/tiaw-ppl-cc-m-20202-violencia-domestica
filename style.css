@@ -194,6 +194,13 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
 }
+main#pgI{
+  background-image: none!important;
+  background-color:rgba(0, 0, 0, 0.651)!important;
+}
+#pgI section{
+  margin: 90px;
+}
 
 .border {
   border-width: 10px !important;
