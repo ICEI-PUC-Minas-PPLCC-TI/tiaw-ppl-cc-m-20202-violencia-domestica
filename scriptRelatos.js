@@ -77,9 +77,10 @@ function showRelato(id) {
   let texto = '';
   sessionStorage.setItem("relComent", id);
   // Montar texto HTML dos relatos
-        let i = id;
         let relatos = db.data[i]; 
         console.log(id);
+        for( i = 0; i < db.size; i++ ){
+          if( i == id ){
       texto += `
       <section class="container-fluid tituloRelato">
           <div class="container">
@@ -100,7 +101,7 @@ function showRelato(id) {
               <p> ${relatos.relato} </p>
               </div>
           </div>
-      </section>`;
+      </section>`;}}
   // Preencher a DIV com o texto HTML
   $('#preencheRel').html(texto);
 }
