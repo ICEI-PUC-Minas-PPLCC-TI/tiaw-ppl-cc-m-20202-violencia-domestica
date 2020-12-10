@@ -48,7 +48,7 @@ function insertRelato(relato) {
   alert("Contato inserido com sucesso");
 
   // Atualiza os dados no Local Storage
-  localStorage.setItem('db_contato', JSON.stringify(db));
+  localStorage.setItem('db_relato', JSON.stringify(db));
 }
 //funcao para exibir
 function formRelatos() {
@@ -75,12 +75,10 @@ function formRelatos() {
 function showRelato(id) {
   
   let texto = '';
-  sessionStorage.setItem("relComent", id);
   // Montar texto HTML dos relatos
-        let relatos = db.data[i]; 
+        let relatos = db.data[id]; 
         console.log(id);
-        for( i = 0; i < db.size; i++ ){
-          if( i == id ){
+
       texto += `
       <section class="container-fluid tituloRelato">
           <div class="container">
@@ -101,7 +99,7 @@ function showRelato(id) {
               <p> ${relatos.relato} </p>
               </div>
           </div>
-      </section>`;}}
+      </section>`;
   // Preencher a DIV com o texto HTML
   $('#preencheRel').html(texto);
 }

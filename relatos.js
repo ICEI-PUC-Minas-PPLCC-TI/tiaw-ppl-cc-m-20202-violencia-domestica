@@ -57,7 +57,7 @@ function insertComentario(comentario) {
   alert("Comentário inserido com sucesso");
 
   // Atualiza os dados no Local Storage
-  localStorage.setItem('cm_contato', JSON.stringify(cm));
+  localStorage.setItem('cm_comentario', JSON.stringify(cm));
 }
 
 window.onload = () => {
