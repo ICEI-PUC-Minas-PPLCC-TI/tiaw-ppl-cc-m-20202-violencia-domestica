@@ -97,7 +97,7 @@ function showRelato(id) {
       <section class="container-fluid tituloRelato">
           <div class="container">
               <div class="top">
-              <div class="fb-share-button" data-href="https://fenixa-app.herokuapp.com/relatosCompletos.html" data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Compartilhar</a></div>
+              <div style="color: white;" class="fb-share-button" data-href="https://fenixa-app.herokuapp.com/relatosCompletos.html" data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Compartilhar</a></div>
                    <h1>${relatos.nome} - ${relatos.categoria}</h1>
               </div>
           </div>
